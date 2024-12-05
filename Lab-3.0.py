@@ -45,7 +45,7 @@ def func_key():
 window = tk.Tk()
 window.title("Генерация ключа")
 window.geometry('512x410')
-window.resizable(width = False, height = True)
+window.resizable(width = False, height = False)
 
 
 logo = tk.PhotoImage(file = 'preview_portal2.png')
