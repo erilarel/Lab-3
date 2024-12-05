@@ -47,9 +47,11 @@ window.title("Генерация ключа")
 window.geometry('512x410')
 window.resizable(width = False, height = True)
 
+
 logo = tk.PhotoImage(file = 'preview_portal2.png')
 bg_logo = tk.Label(window, image=logo)
 bg_logo.grid(row = 0, column = 0)
+
 
 btn = tk.Button(window, text = 'GENERATE KEY', bg='DeepPink4', fg='white', font=('Arial', 15), command = func_key)
 btn.place(relx=0.5, rely=0.89, anchor='center')
@@ -59,6 +61,7 @@ frame = tk.Frame()
 frame.place(relx = 0.5, rely = 0.53, anchor='center')
 l2 = tk.Label(frame, text='XXXXX-XXXX-XXXX', background="#FFCDD2", foreground="#B71C1C", font = ('Book Old Style', 25, 'bold'))
 l2.pack(expand = True)
+
 
 pg.mixer.init()
 pg.mixer.music.load('No_Cake_for_You_.mp3')
